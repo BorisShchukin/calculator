@@ -1,0 +1,95 @@
+//<Обнуление>==========================
+@import '_null.scss';
+
+//<Шрифты>=============================
+//<Подключаем шрифты>==================
+// Ctrl + Shift + F
+//&display=swap&subset=cyrillic-ext
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext);
+//<Шрифт по умолчанию>=================
+
+//<Переменный>=========================
+$fontFamily: 'Arial', sans-serif;
+$fontSize: 14;
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1170px;
+$media1: $maxWidthContainer + 12px;
+$media2: 991.98px;
+$media3: 767.98px;
+$media4: 479.98px;
+
+//<Оболочка>===========================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  min-width: auto;
+}
+//===================
+.wrapper {
+  width: 250px;
+  height: 100v;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.display {
+  margin: 10px 0 10px 10px;
+  width: 90%;
+  height: 40px;
+  text-align: right;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+.keyboard {
+  width: 90%;
+  margin: auto auto;
+}
+
+.btn {
+  background-color: white;
+  width: 45px;
+  padding: 15px;
+  margin: 1px;
+  font-size: 25px;
+  &:hover {
+    opacity: 0.7;
+  }
+
+  border: 1px solid black;
+}
+.number:hover {
+  background-color: rgb(211, 204, 204);
+}
+.sign {
+  background-color: rgb(243, 201, 84);
+  border: 1px solid black;
+}
+
+.numbers {
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: center;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.sqrt {
+  background-color: rgb(226, 213, 213);
+}
+.equals {
+  background-color: rgb(168, 162, 162);
+}
+.clear,
+.backspace {
+  background-color: rgb(231, 78, 78);
+}
